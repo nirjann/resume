@@ -1,117 +1,160 @@
-<h1 align="center">
-  <a href="https://github.com/posquit0/Awesome-CV" title="AwesomeCV Documentation">
-    <img alt="AwesomeCV" src="https://github.com/posquit0/Awesome-CV/raw/master/icon.png" width="200px" height="200px" />
-  </a>
-  <br />
-  Awesome CV
-</h1>
+# Awesome CV - LaTeX Resume Template
 
-<p align="center">
-  LaTeX template for your outstanding job application
-</p>
+## Overview
 
-<div align="center">
-  <a href="https://www.paypal.me/posquit0">
-    <img alt="Donate" src="https://img.shields.io/badge/Donate-PayPal-blue.svg" />
-  </a>
-  <a href="https://circleci.com/gh/posquit0/Awesome-CV">
-    <img alt="CircleCI" src="https://circleci.com/gh/posquit0/Awesome-CV.svg?style=shield" />
-  </a>
-  <a href="https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/resume.pdf">
-    <img alt="Example Resume" src="https://img.shields.io/badge/resume-pdf-green.svg" />
-  </a>
-  <a href="https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/cv.pdf">
-    <img alt="Example CV" src="https://img.shields.io/badge/cv-pdf-green.svg" />
-  </a>
-  <a href="https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/coverletter.pdf">
-    <img alt="Example Coverletter" src="https://img.shields.io/badge/coverletter-pdf-green.svg" />
-  </a>
-</div>
+This repository contains a customized implementation of the Awesome CV LaTeX template for creating professional resumes, CVs, and cover letters. The template provides a clean, modern design with extensive customization options.
 
-<br />
+## Customization Guide
 
-## What is Awesome CV?
+### Document Structure
 
-**Awesome CV** is LaTeX template for a **CV(Curriculum Vitae)**, **Résumé** or **Cover Letter** inspired by [Fancy CV](https://www.sharelatex.com/templates/cv-or-resume/fancy-cv). It is easy to customize your own template, especially since it is really written by a clean, semantic markup.
+The project is organized into modular components for easy customization:
 
+- `resume.tex`, `cv.tex`, `coverletter.tex`: Main entry point files
+- `awesome-cv.cls`: Core class file defining the document structure and styling
+- `resume/`, `cv/`: Directories containing section files
 
-## Donate
+### Customizing Your Resume
 
-Please help keep this project alive! Donations are welcome and will go towards further development of this project.
+#### 1. Personal Information
 
-    PayPal: paypal.me/posquit0
-    BTC: 1Je3DxJVM2a9nTVPNo55SfQwpmxA6N2KKb
-    BCH: 1Mg1wG7PwHGrHYSWS67TsGSjo5GHEVbF16
-    ETH: 0x77ED9B4659F80205E9B9C9FB1E26EDB9904AFCC7
-    QTUM: QZT7D6m3QtTTqp7s4ZWAwLtGDsoHMMaM8E
+Edit the personal information section in your main `.tex` file:
 
-*Thank you for your support!*
-
-## Preview
-
-#### Résumé
-
-You can see [PDF](https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/resume.pdf)
-
-| Page. 1 | Page. 2 |
-|:---:|:---:|
-| [![Résumé](https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/resume-0.png)](https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/resume.pdf)  | [![Résumé](https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/resume-1.png)](https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/resume.pdf) |
-
-#### Cover Letter
-
-You can see [PDF](https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/coverletter.pdf)
-
-| Without Sections | With Sections |
-|:---:|:---:|
-| [![Cover Letter(Traditional)](https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/coverletter-0.png)](https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/coverletter.pdf)  | [![Cover Letter(Awesome)](https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/coverletter-1.png)](https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/coverletter.pdf) |
-
-
-## Quick Start
-
-* [**Edit Résumé on OverLeaf.com**](https://www.overleaf.com/latex/templates/awesome-cv/tvmzpvdjfqxp)
-* [**Edit Cover Letter on OverLeaf.com**](https://www.overleaf.com/latex/templates/awesome-cv-cover-letter/pfzzjspkthbk)
-
-**_Note:_ Above services do not guarantee up-to-date source code of Awesome CV**
-
-
-## How to Use
-
-#### Requirements
-
-A full TeX distribution is assumed.  [Various distributions for different operating systems (Windows, Mac, \*nix) are available](http://tex.stackexchange.com/q/55437) but TeX Live is recommended.
-You can [install TeX from upstream](http://tex.stackexchange.com/q/1092) (recommended; most up-to-date) or use `sudo apt-get install texlive-full` if you really want that.  (It's generally a few years behind.)
-
-#### Usage
-
-At a command prompt, run
-
-```bash
-$ xelatex {your-cv}.tex
+```latex
+\name{First}{Last}
+\address{Street, City, Country}
+\mobile{(+00) 0000000000}
+\email{name@example.com}
+\github{username}
+\linkedin{username}
 ```
 
-This should result in the creation of ``{your-cv}.pdf``
+Additional optional fields include:
+- `\homepage{url}`
+- `\gitlab{username}`
+- `\stackoverflow{id}{name}`
+- `\twitter{@username}`
+- `\skype{username}`
 
+#### 2. Document Styling
 
-## Credit
+The template offers several color schemes that can be changed in the main `.tex` file:
 
-[**LaTeX**](http://www.latex-project.org) is a fantastic typesetting program that a lot of people use these days, especially the math and computer science people in academia.
+```latex
+% Available colors: awesome-emerald, awesome-skyblue, awesome-red, 
+% awesome-pink, awesome-orange, awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-skyblue}
+```
 
-[**LaTeX FontAwesome**](https://github.com/furl/latex-fontawesome) is bindings for FontAwesome icons to be used in XeLaTeX.
+You can also define custom colors:
 
-[**Roboto**](https://github.com/google/roboto) is the default font on Android and ChromeOS, and the recommended font for Google’s visual language, Material Design.
+```latex
+\definecolor{awesome}{HTML}{CA63A8}
+```
 
-[**Source Sans Pro**](https://github.com/adobe-fonts/source-sans-pro) is a set of OpenType fonts that have been designed to work well in user interface (UI) environments.
+#### 3. Section Content
 
+Each section of the resume is stored in a separate `.tex` file in the `resume/` directory:
 
-## Contact
+- `experience.tex`: Work history
+- `education.tex`: Academic background
+- `skills.tex`: Technical skills
+- `interests.tex`: Personal interests
+- Additional optional sections: `summary.tex`, `honors.tex`, `presentation.tex`, etc.
 
-You are free to take my `.tex` file and modify it to create your own resume. Please don't use my resume for anything else without my permission, though!
+To add or remove sections, modify the imports in your main `.tex` file:
 
-If you have any questions, feel free to join me at [`#posquit0` on Freenode](irc://irc.freenode.net/posquit0) and ask away. Click [here](https://kiwiirc.com/client/irc.freenode.net/posquit0) to connect.
+```latex
+\input{resume/summary.tex}
+\input{resume/experience.tex}
+\input{resume/skills}
+\input{resume/education.tex}
+```
 
-Good luck!
+#### 4. Entry Formatting
 
+Work experience entries use the `\cventry` command:
 
-## See Also
+```latex
+\cventry
+  {Job Title} % Position
+  {Company Name} % Organization
+  {Location} % Location
+  {Date Range} % Date(s)
+  {
+    \begin{cvitems} % Description(s) of tasks/responsibilities
+      \item {Description 1}
+      \item {Description 2}
+    \end{cvitems}
+  }
+```
 
-* [Awesome Identity](https://github.com/posquit0/hugo-awesome-identity) - A single-page Hugo theme to introduce yourself.
+Skills can be formatted using the `\cvskill` command:
+
+```latex
+\begin{cvskills}
+  \cvskill{Category}{Skill1\hspace{2mm}Skill2\hspace{2mm}Skill3}
+\end{cvskills}
+```
+
+## Compilation Guide
+
+### Requirements
+
+- A full TeX distribution (TeX Live recommended)
+- XeLaTeX compiler
+- The following fonts (included in the `fonts/` directory):
+  - Source Sans Pro
+  - Roboto
+  - Font Awesome
+
+### Compilation Steps
+
+1. **Generate Resume PDF:**
+   ```bash
+   xelatex resume.tex
+   ```
+
+2. **Generate CV PDF (optional):**
+   ```bash
+   xelatex cv.tex
+   ```
+
+3. **Generate Cover Letter PDF (optional):**
+   ```bash
+   xelatex coverletter.tex
+   ```
+
+### Troubleshooting
+
+- **Font Issues**: Ensure the fonts are properly installed or available in the `fonts/` directory
+- **Compilation Errors**: Run XeLaTeX with the `--shell-escape` flag if needed
+- **PDF Viewing**: Some PDF viewers may need to be closed and reopened to see changes
+
+## Advanced Customization
+
+### Custom Sections
+
+Create new section files in the `resume/` directory and include them in your main `.tex` file.
+
+### Layout Adjustments
+
+Modify page margins in the main `.tex` file:
+
+```latex
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+```
+
+### Header/Footer Customization
+
+Customize the header and footer in the main `.tex` file:
+
+```latex
+\makecvheader[C] % C for center, L for left, R for right
+\makecvfooter{Left text}{Center text}{Right text}
+```
+
+## License
+
+This template is based on the [Awesome CV](https://github.com/posquit0/Awesome-CV) project by Claud D. Park, available under the Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0).
+
