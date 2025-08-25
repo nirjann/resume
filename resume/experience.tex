@@ -1,54 +1,39 @@
-%-------------------------------------------------------------------------------
-%	SECTION TITLE
-%-------------------------------------------------------------------------------
 \cvsection{Work Experience}
 
-
-%-------------------------------------------------------------------------------
-%	CONTENT
-%-------------------------------------------------------------------------------
 \begin{cventries}
 
 %---------------------------------------------------------
-  \cventry
-    {Consultant} % Job title
-    {DCC Services Pvt. Ltd.} % Organization
-    {Sector V, Kolkata} % Location
-    {Mar. 2023 - present} % Date(s)
+\cventry
+    {Consultant}
+    {DCC Services Pvt. Ltd.}
+    {Sector V, Kolkata}
+    {Mar. 2023 - Present}
     {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-      \setlength\itemsep{1.4mm}
-      \item {Led a team to build a high-volume data ingestion pipeline handling \textbf{~1 million rows} every 20 minutes from large files (>15MB), ensuring data quality and reliability.}
-      \item {Implemented parsing, validation, and cleaning using \textbf{GCP Cloud Functions} and \textbf{Pub/Sub}, triggered by \textbf{GCS} events to auto-scale processing workers.}
-      \item {Optimized memory-efficient batch validation and loading strategies to ingest data reliably into the main system database.}
-      \item {Designed and implemented an incremental backup solution for \textbf{MySQL RDS}, capturing binary logs and storing them in \textbf{AWS S3} for Point-In-Time Recovery (PITR).}
-      \item {Developed an automated restoration workflow using \textbf{AWS Step Functions} to enable step-by-step replay of binlogs, ensuring reliable and efficient data recovery.}
-      \item {Improved backup reliability and reduced recovery time objectives for mission-critical database systems.}
-      \item {Architected and built a Retrieval-Augmented Generation (RAG) system leveraging \textbf{LlamaIndex} and \textbf{Pinecone vector database} to manage and query large bid document knowledgebases (\textbf{~2000 pages per document}).}
-      \item {Designed a multi-agent architecture with document-specific agents and an orchestrator agent to extract, summarize, and structure complex information from multiple documents per project.}
-      \item {Enabled efficient, automated extraction and summarization of critical bid and project data, improving knowledge accessibility and supporting faster decision-making.}
-      \item {Architected a microservice system with \textbf{Spring Cloud} with service discovery and API Gateway, enabling scalable, fault-tolerant communication.}
-      \item {Implemented secure \textbf{SSO}-based authentication and propagated security headers for trusted inter-service communication.}
-      \item {Deployed the full system on \textbf{Azure VMs} within a \textbf{Docker} network, automating builds and releases via containers for streamlined operations.}
-      \item {Developed key features of a React Native e-commerce ordering app using \textbf{React Native}, \textbf{Expo}, and \textbf{Tamagui} design system for cross-platform consistency.}
-      \item {Managed application state efficiently with \textbf{Zustand} to improve performance and user experience.}
-     \end{cvitems}
+      \begin{cvitems}
+        \setlength\itemsep{1.8mm}
+        \item {Led a cross-functional team to architect and build a high-volume, event-driven data ingestion pipeline on \textbf{GCP}, processing over \textbf{1 million rows} every 20 minutes using Cloud Functions, Pub/Sub, and GCS triggers.}
+        \item {Architected and built an enterprise-grade \textbf{Retrieval-Augmented Generation (RAG) system} using LlamaIndex and Pinecone to analyze complex technical documents (2000+ pages), automating critical data extraction to support business development.}
+        \item {Designed and deployed a scalable \textbf{microservice architecture} on \textbf{Azure VMs} using Spring Cloud, Docker, and a centralized API Gateway, establishing secure inter-service communication and robust service discovery.}
+        \item {Engineered a fully automated disaster recovery solution for mission-critical \textbf{MySQL on AWS RDS}, implementing incremental backups to S3 and orchestrating Point-In-Time Recovery (PITR) with \textbf{AWS Step Functions}, significantly reducing Recovery Time Objectives (RTO).}
+        \item {Implemented a comprehensive authentication and authorization strategy for the microservice ecosystem, including enterprise \textbf{SSO integration} and JWT-based security protocols to protect sensitive endpoints and data.}
+        \item {Demonstrated multi-cloud proficiency by leading the end-to-end design, development, and deployment of complex solutions across \textbf{AWS, GCP, and Azure}, ensuring optimal performance, security, and cost-efficiency.}
+      \end{cvitems}
     }
-    
-    \vspace{4mm} % Added vertical space between entries
+    \vspace{4mm}
+
 
 %---------------------------------------------------------
   \cventry
-    {Associate Consultant} % Job title
-    {DCC Services Pvt. Ltd.} % Organization
-    {Sector V, Kolkata} % Location
-    {July. 2022 - Mar. 2023} % Date(s)
+    {Associate Consultant}
+    {DCC Services Pvt. Ltd.}
+    {Sector V, Kolkata}
+    {Jul. 2022 - Mar. 2023}
     {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
+      \begin{cvitems}
         \setlength\itemsep{1.8mm}
-        \item {Engineered a \textbf{full-stack e-commerce platform} (Angular, Spring Boot) that increased online orders by \textbf{15\%} and reduced cart abandonment by \textbf{20\%} through an optimized checkout flow.}
-        \item {Architected a \textbf{dual-gateway payment system} (Stripe, Square) to reliably process over \textbf{10{,}000} transactions monthly with high availability.}
-        \item {Built and owned the \textbf{CI/CD pipeline} using GitHub Actions, cutting manual deployment effort by \textbf{80\%} and accelerating release cycles from monthly to weekly.}
+        \item {Engineered a \textbf{full-stack e-commerce platform} using Angular and Spring Boot that increased online orders by \textbf{15\%} and reduced cart abandonment by \textbf{20\%}.}
+        \item {Architected \textbf{dual-gateway payment system} (Stripe, Square) processing \textbf{10,000+} monthly transactions with \textbf{99.9\%} reliability.}
+        \item {Built \textbf{CI/CD pipeline} with GitHub Actions, reducing manual deployment effort by \textbf{80\%} and accelerating release cycles from monthly to weekly.}
       \end{cvitems}
     }
 
@@ -59,15 +44,14 @@
     {Trainee Consultant}
     {DCC Services Pvt. Ltd.}
     {Sector V, Kolkata}
-    {Jan. 2022 - July 2022}
+    {Jan. 2022 - Jul. 2022}
     {
       \begin{cvitems}
         \setlength\itemsep{1.8mm}
-        \item {Developed and deployed a high-performance search system for an internal project using \textbf{Elasticsearch}, enabling efficient full-text and proximity search capabilities.}
-        \item {Improved data retrieval speed and accuracy, significantly enhancing user experience for internal stakeholders.}
+        \item {Developed high-performance search system using \textbf{Elasticsearch} for internal projects, enabling efficient full-text and proximity search capabilities.}
+        \item {Built key features for React Native e-commerce app using \textbf{Expo}, \textbf{Tamagui}, and \textbf{Zustand} for cross-platform consistency and state management.}
       \end{cvitems}
     }
 
-
-%---------------------------------------------------------
 \end{cventries}
+
