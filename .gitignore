@@ -14,8 +14,6 @@
 *.snm
 *.vrb
 
-# PDF output
-*.pdf
 
 # Editor swap/backup files
 *~
