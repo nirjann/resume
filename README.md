@@ -145,6 +145,93 @@ Modify page margins in the main `.tex` file:
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
 ```
 
+# Professional LaTeX Resume Template
+
+A clean, modern resume template built with LaTeX, forked from [posquit0/Awesome-CV](https://github.com/posquit0/Awesome-CV) and customized for professional use.
+
+## Features
+
+- Clean, modern design
+- Easy customization
+- Multiple sections (Experience, Education, Skills, etc.)
+- Support for profile picture
+- Print-friendly layout
+- Mobile-responsive PDF output
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed:
+
+- A LaTeX distribution (TeX Live, MiKTeX, or MacTeX)
+- XeLaTeX (included in most LaTeX distributions)
+- Fonts (Roboto and FontAwesome are included in the `fonts/` directory)
+
+## Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/your-resume.git
+cd your-resume
+```
+
+### 2. Install Dependencies
+
+#### For Ubuntu/Debian:
+```bash
+sudo apt-get install texlive-xetex texlive-fonts-extra
+```
+
+#### For macOS (using Homebrew):
+```bash
+brew install --cask mactex-no-gui
+```
+
+#### For Windows (using MiKTeX):
+Download and install [MiKTeX](https://miktex.org/download)
+
+### 3. Customize Your Resume
+
+Edit the following files to customize your resume:
+
+- `resume.tex` - Main resume document
+- `resume/` directory contains:
+  - `summary.tex` - Your professional summary
+  - `experience.tex` - Work experience
+  - `education.tex` - Education background
+  - `skills.tex` - Skills and expertise
+  - `projects.tex` - Personal or professional projects
+  - `interests.tex` - Personal interests (optional)
+
+### 4. Update Your Profile Picture
+
+Replace `profile.png` with your own square profile picture (recommended size: 800x800px).
+
+## Compiling Your Resume
+
+### Using Command Line
+
+```bash
+xelatex resume.tex
+```
+
+Or use the provided Makefile (if available):
+
+```bash
+make
+```
+
+### Using LaTeX Editors
+
+1. Open `resume.tex` in your preferred LaTeX editor (e.g., TeXstudio, Overleaf, VSCode with LaTeX Workshop)
+2. Set the compiler to XeLaTeX
+3. Compile the document
+
+## Customization
+
+### Changing Colors
+Edit the `awesome-cv.cls` file to change the color scheme. Look for the `% Colors` section.
+
 ### Header/Footer Customization
 
 Customize the header and footer in the main `.tex` file:
@@ -154,7 +241,36 @@ Customize the header and footer in the main `.tex` file:
 \makecvfooter{Left text}{Center text}{Right text}
 ```
 
+### Adding New Sections
+1. Create a new `.tex` file in the `resume/` directory
+2. Add content using the provided LaTeX commands
+3. Include it in `resume.tex` using `\input{resume/yourfile.tex}`
+
+## Tips
+
+- Keep your resume concise (1-2 pages)
+- Use action verbs to describe your experience
+- Quantify achievements when possible
+- Proofread carefully before finalizing
+
 ## License
 
-This template is based on the [Awesome CV](https://github.com/posquit0/Awesome-CV) project by Claud D. Park, available under the Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0).
+This work is distributed under the
+[LaTeX Project Public License (LPPL) Version 1.3c](https://www.latex-project.org/lppl/).
 
+This work has the LPPL maintenance status 'maintained'.
+
+The Current Maintainer of this work is Arijit Sarkar.
+
+### Distribution Requirements
+
+- All files distributed must include the LPPL license notice and the list of files in the distribution.
+- Modified files must be clearly documented as such.
+- The distribution must contain either the complete source of the work or a script to generate it from the source.
+
+For more details, see the [LPPL FAQ](https://www.latex-project.org/lppl/).
+
+## Acknowledgments
+
+- [Awesome-CV](https://github.com/posquit0/Awesome-CV) - The original template
+- [LaTeX](https://www.latex-project.org/) - The document preparation system
