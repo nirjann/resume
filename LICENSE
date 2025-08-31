@@ -1,10 +1,56 @@
+================================================================================
+LICENSE OVERVIEW FOR THIS REPOSITORY
+================================================================================
+
+This repository is based on the Awesome-CV template. It contains files under TWO SEPARATE LICENSES, as required by the original project.
+
+--------------------------------------------------------------------------------
+1. awesome-cv.cls (Class file)
+--------------------------------------------------------------------------------
+This file is licensed under the LaTeX Project Public License (LPPL) v1.3c.
+See https://www.latex-project.org/lppl/ for the full license text.
+
+- You may distribute and modify this file under the terms of the LPPL.
+- The LPPL applies ONLY to awesome-cv.cls.
+
+--------------------------------------------------------------------------------
+2. All .tex Files and Content Files (resume.tex, cv.tex, coverletter.tex, and all files in resume/, cv/)
+--------------------------------------------------------------------------------
+These files are licensed under the Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0).
+See https://creativecommons.org/licenses/by-sa/4.0/ for the full license text.
+
+- You are free to share and adapt the content, provided you give appropriate credit and distribute your contributions under the same license.
+- This applies to all content files except awesome-cv.cls.
+
+--------------------------------------------------------------------------------
+Attribution
+--------------------------------------------------------------------------------
+This repository is derived from:
+- Awesome-CV by Claud D. Park (https://github.com/posquit0/Awesome-CV)
+
+Please retain this notice and the original license texts when redistributing or modifying this repository.
+
+================================================================================
+
+# LPPL v1.3c (for awesome-cv.cls)
+
 The LaTeX Project Public License
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+================================
 
 LPPL Version 1.3c  2008-05-04
 
-Copyright 1999 2002-2008 LaTeX3 Project
+Copyright 1999, 2002-2008 LaTeX3 Project
+
     Everyone is allowed to distribute verbatim copies of this
     license document, but modification of it is not allowed.
 
 [The full LPPL 1.3c license text follows in the original document]
+
+================================================================================
+
+# Creative Commons Attribution-ShareAlike 4.0 International (for all .tex and content files)
+
+See: https://creativecommons.org/licenses/by-sa/4.0/legalcode
+
+[The full CC BY-SA 4.0 license text follows in the original document]
+

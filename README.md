@@ -255,22 +255,19 @@ Customize the header and footer in the main `.tex` file:
 
 ## License
 
-This work is distributed under the
-[LaTeX Project Public License (LPPL) Version 1.3c](https://www.latex-project.org/lppl/).
+This repository is dual-licensed, following the requirements of the original Awesome-CV project:
 
-This work has the LPPL maintenance status 'maintained'.
+### 1. `awesome-cv.cls`
+This file is licensed under the **LaTeX Project Public License (LPPL) v1.3c**.
+See <https://www.latex-project.org/lppl/> for the full license text.
 
-The Current Maintainer of this work is Arijit Sarkar.
+### 2. All `.tex` Files and Content Files
+(resume.tex, cv.tex, coverletter.tex, and all files in `resume/`, `cv/`)
+These files are licensed under the **Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)**.
+See <https://creativecommons.org/licenses/by-sa/4.0/> for the full license text.
 
-### Distribution Requirements
+### Attribution
+This repository is derived from:
+- [Awesome-CV](https://github.com/posquit0/Awesome-CV) by Claud D. Park
 
-- All files distributed must include the LPPL license notice and the list of files in the distribution.
-- Modified files must be clearly documented as such.
-- The distribution must contain either the complete source of the work or a script to generate it from the source.
-
-For more details, see the [LPPL FAQ](https://www.latex-project.org/lppl/).
-
-## Acknowledgments
-
-- [Awesome-CV](https://github.com/posquit0/Awesome-CV) - The original template
-- [LaTeX](https://www.latex-project.org/) - The document preparation system
+Please retain this notice and the original license texts when redistributing or modifying this repository.
